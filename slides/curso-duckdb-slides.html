@@ -1051,16 +1051,40 @@ p { font-size: 32px; line-height: 1.45; }
 <aside>Volte à analista da motivação: o notebook de 8 GB agora dá conta do arquivo que antes derrubava o kernel. Recapitule os cinco pontos em uma frase cada e passe para o encerramento.</aside>
 </section>
 
-<section id="fim" class="dark" style="justify-content:center;">
-<p class="eyebrow">Para levar</p>
-<h2 style="width:1500px;">Comece pelo arquivo que você já tem</h2>
-<div class="grid3">
-<div class="card"><p class="tag">amanhã</p><p class="txt">Troque um read_csv + groupby lento por duckdb.sql()</p></div>
-<div class="card"><p class="tag">esta semana</p><p class="txt">Converta seus CSVs grandes para Parquet com COPY</p></div>
-<div class="card"><p class="tag">antes de atualizar</p><p class="txt">Leia o guia de migração da 2.0 e troque os lambdas</p></div>
+<section id="quem-usa">
+<style>
+#quem-usa .card { gap: 18px; padding: 32px 40px; }
+#quem-usa .app { display: flex; gap: 24px; align-items: baseline; }
+#quem-usa .app-nome { font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif; font-size: 34px; font-weight: 600; color: var(--blue); width: 290px; flex: 0 0 290px; line-height: 1.2; }
+#quem-usa .app-txt { font-size: 26px; line-height: 1.3; color: var(--soft); }
+#quem-usa .app-nome a { color: inherit; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; text-decoration-color: var(--line); }
+</style>
+<div class="head">
+<p class="eyebrow">Quem usa</p>
+<h2>DuckDB dentro de outros produtos</h2>
 </div>
-<p class="lead">duckdb.org/docs · duckdb.org/news · shell.duckdb.org</p>
-<aside>Encerramento. Reforce que os notebooks ficam com eles e que tudo roda offline depois do notebook 00. Abra para perguntas.</aside>
+<div class="grid2" style="flex:1;">
+<div class="card">
+<p class="tag">comerciais</p>
+<div class="app"><p class="app-nome"><a href="https://motherduck.com" target="_blank" rel="noopener">MotherDuck</a></p><p class="app-txt">DuckDB como serviço na nuvem</p></div>
+<div class="app"><p class="app-nome"><a href="https://hex.tech" target="_blank" rel="noopener">Hex</a></p><p class="app-txt">SQL sobre DataFrames nos notebooks</p></div>
+<div class="app"><p class="app-nome"><a href="https://omni.co/blog/duckdb-complements-bi" target="_blank" rel="noopener">Omni</a></p><p class="app-txt">BI que consulta resultados no navegador</p></div>
+<div class="app"><p class="app-nome"><a href="https://count.co/blog/how-we-evolved-our-query-architecture-with-duckdb" target="_blank" rel="noopener">Count</a></p><p class="app-txt">Células locais com DuckDB no canvas</p></div>
+<div class="app"><p class="app-nome"><a href="https://huggingface.co/docs/hub/datasets-viewer-sql-console" target="_blank" rel="noopener">Hugging Face</a></p><p class="app-txt">Console SQL nos datasets do Hub</p></div>
+<div class="app"><p class="app-nome"><a href="https://crunchydata.com/solutions/postgres-with-duckdb" target="_blank" rel="noopener">Crunchy Data Warehouse</a></p><p class="app-txt">Postgres com DuckDB para analytics</p></div>
+</div>
+<div class="card">
+<p class="tag">open source</p>
+<div class="app"><p class="app-nome"><a href="https://github.com/duckdb/dbt-duckdb" target="_blank" rel="noopener">dbt-duckdb</a></p><p class="app-txt">Adaptador do dbt para DuckDB</p></div>
+<div class="app"><p class="app-nome"><a href="https://evidence.dev" target="_blank" rel="noopener">Evidence</a></p><p class="app-txt">Relatórios em SQL e Markdown</p></div>
+<div class="app"><p class="app-nome"><a href="https://github.com/rilldata/rill" target="_blank" rel="noopener">Rill</a></p><p class="app-txt">Dashboards com DuckDB embutido</p></div>
+<div class="app"><p class="app-nome"><a href="https://observablehq.com/framework/" target="_blank" rel="noopener">Observable Framework</a></p><p class="app-txt">Data apps com DuckDB-WASM</p></div>
+<div class="app"><p class="app-nome"><a href="https://ibis-project.org" target="_blank" rel="noopener">Ibis</a></p><p class="app-txt">API de DataFrame, DuckDB é o backend padrão</p></div>
+<div class="app"><p class="app-nome"><a href="https://github.com/TobikoData/sqlmesh" target="_blank" rel="noopener">SQLMesh</a></p><p class="app-txt">Transformações testadas localmente no DuckDB</p></div>
+<div class="app"><p class="app-nome"><a href="https://github.com/duckdb/pg_duckdb" target="_blank" rel="noopener">pg_duckdb</a></p><p class="app-txt">Extensão que roda DuckDB dentro do Postgres</p></div>
+</div>
+</div>
+<aside>Mostre que o DuckDB não é só ferramenta de notebook. Ele roda dentro de produtos pagos e de projetos abertos, no servidor e no navegador. Pergunte se alguém já usou algum desses sem saber que tinha DuckDB por baixo.</aside>
 </section>
 
 <section id="obrigado" style="justify-content:space-between;">
