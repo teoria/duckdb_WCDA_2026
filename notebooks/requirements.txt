@@ -1,0 +1,7 @@
+duckdb>=2.0.0
+duckdb-cli>=2.0.0
+pandas
+polars
+pyarrow
+matplotlib
+jupyter
